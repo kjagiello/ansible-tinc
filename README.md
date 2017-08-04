@@ -30,7 +30,7 @@ prod04 vpn_ip=10.0.0.4 ansible_host=162.243.252.151
 
 The first line, `[vpn]`, specifies that the host entries directly below it are part of the "vpn" group. Members of this group will have the Tinc mesh VPN configured on them.
 
-- The first column is where you set the inventory name of a host, "node01" in the first line of the example, how Ansible will refer to the host. This value is used to configure Tinc connections, and to generate `/etc/hosts` entries. Do not use hyphens here, as Tinc does not support them in host names
+- The first column is where you set the inventory name of a host, "prod01" in the first line of the example, how Ansible will refer to the host. This value is used to configure Tinc connections, and to generate `/etc/hosts` entries. Do not use hyphens here, as Tinc does not support them in host names
 - `vpn_ip` is the IP address that the node will use for the VPN
 - `ansible_host` must be set to a value that your ansible machine can reach the node at
 
